@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <link href="login.css"type="text/css"rel="stylesheet">
+    
+
+<h2> To Login, please click the sign up button </h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Login</h1>
+      <p>Please fill  your details in the form to create a new  account</p>
+
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').login.display='none'"class="close" title="Close Modal">&times;</span>
+        <img src="IMAGE.jpg"><!--adding image-->
+      </div>
+  
+      <hr>
+      <label for="ema"><b>Email</b></label><!--adding email label-->
+      <input type="text" placeholder="  Enter Your Email Id" name="ema" required><!--adding input please enter your email id-->
+
+      <label for="p"><b>Password</b></label><!--adding password label-->
+      <input type="password" placeholder=" Enter your Password" name="p" required><!--adding input please enter a password-->
+
+      
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel Go Back</button>
+        <button type="submit" class="signupbtn">Login</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script> //javascript
+  
+// Get the modal
+var k = document.getElementById('id01');
+
+// The window closes when the user enters anywhere beyond the required columns
+window.onclick = function(e) {
+  if (e.target == k) {
+    k.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

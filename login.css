@@ -1,0 +1,121 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 16px;
+  margin: 6px 0 21px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  background: white;
+}
+
+/* Add background color  */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: rgb(226, 202, 202);
+  outline: none;
+}
+
+/* style for buttons */
+button {
+  background-color: red;
+  color: white;
+  padding: 13px 19px;
+  margin: 7px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.8;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* styles  cancel button */
+.cancelbtn {
+  padding: 13px 19px;
+  background-color: black;
+}
+
+/* cancel and signup buttons setting  equal width 50 */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/*  padding to container elements */
+.container {
+  padding: 14px;
+}
+
+/* background styling */
+.modal {      
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color:hsl(0, 0%, 99%);
+  padding-top: 50px;
+}
+
+/*  Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #ece4e4;
+  width: 60%; 
+}
+
+/* Style horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 24px;
+}
+ 
+
+/* Clearing floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* background */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color:white; /* Fallback color */
+    background-color:yellow; 
+    padding-top: 60px;
+  }
+  
+
+ /* Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; 
+    border: 1px solid maroon;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+
+
+/* stlying buttons to make it responsive in small screens too */
+@media screen and (max-width: 200px) {
+  .cancelbtn, .signupbtn {
+     width: 50%;
+  }
+}

@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+.container{
+    background-color: yellow;
+    height:100%;
+    width:100%;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid ;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 17px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color:maroon;
+  color: white;/*background color*/
+  padding: 13px 19px;
+ 
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: grey; /*when pressing submit it shows grey in color*/
+}
+
+.body {
+  border-radius: 4px;
+  padding: 19px;
+}

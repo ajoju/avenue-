@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BURGER STORE</title>  <!--title of the webpage-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    
+</head>
+<body>
+    <div class="header">                 <!--The main page-->
+        <div class="nav-bar">          
+            <div class="nav-logo">       <!--div to present the logo on the top of the webpage-->
+                <img src="logo.png">     <!-- importing image to present on the header/ top part of the web page-->
+            </div>
+            <div class="nav-links">               <!-- div to display the tiles/lists like Home, About, Recipe and Contact-->
+                <ul>
+                    <a href="#"><li>HOME</li></a>
+                    <a href="#"><li>ABOUT</li></a>
+                    <a href="#"><li>RECEIPE</li></a>
+                    <a href="#"><li>CONTACT</li></a>
+                    <a href="#"><li>FEEDBACK</li></a>
+                </ul>
+                
+                <button type="button" class="btn">SIGN UP</button>   <!--button for Sign Up-->
+                <a href="#" class="fa fa-facebook"></a> <!--adding facebook icon-->
+                <a href="#" class="fa fa-twitter"></a><!--adding twitter icon-->
+                <a href="#" class="fa fa-google"></a><!--adding google icon-->
+                <a href="#" class="fa fa-skype"></a><!--adding skype icon-->
+
+
+                
+
+                  <div class="query-container" >  <!--div to create a space for writing queries-->
+                    <form>
+                        <input type="text"placeholder="      Type if you have a query........     "name="search">
+                        <button type = "submit"></button>
+                    </form>
+                  </div>
+                
+            </div>
+        </div>
+            <div class="banner-title">      <!-- Div to create logo of the webpage, ie.. the background of the screen-->
+                <h1>Food<span> is the heart<br> of people. </span>It is a madness</h1>  <!--Dialogue to be presented in the centre of the screen-->
+                <button type="button" class="btn">EXPLORE</button>     <!--Creating Explore button in the web page-->
+            </div>   
+
+            <div class="search-container">       <!--div to create a space for search tool-->
+                <form>
+                    <!--space in webpage for the user to enter searching item-->
+                    <input type="text"  placeholder="      Search for your items........     "name="search">
+                    <button type = "submit"><i ></i></button>
+                </form>
+              </div>
+              
+            <div class="notification">
+            <script type="text/javascript">
+            
+                //asking the user to enter name which appears in the main page 
+                var na;
+               na = window.prompt ("Please type your name");
+               document.writeln ("<h1> Hello " + na +"," +" Welcome to Healthy Food.How can i help you!!!!");
+            
+                </script> 
+            </div>             
+
+    </div>
+    
+</body>
+</html>
